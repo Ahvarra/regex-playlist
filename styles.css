@@ -22,3 +22,27 @@ input{
     border: 3px solid #ccc;
     outline: none !important;
 }
+
+input.valid {
+    border-color: green;
+    transition: 0.3s;
+}
+
+input + p {
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px 10px 10px;
+    color: red;
+    display: none;
+}
+
+input.invalid + p {
+    display: block;
+}
+
+input.invalid {
+    border-color: red;
+    transition: 0.3s;
+}
